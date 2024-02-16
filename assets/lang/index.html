@@ -23,33 +23,35 @@
 
   <title>Portfolio the Jean.C</title>
 
-  <link rel="icon" href="assets/img/diseno-logotipo-circulo-letras-jc_713501-342.avif" type="image/avif" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script type="module" src="assets/js/main.js" defer></script>
-
+  <link rel="icon" href="../img/diseno-logotipo-circulo-letras-jc_713501-342.avif" type="image/avif" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="module" src="../js/main.js" defer></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
   <script type="text/javascript">
-    emailjs.init('QHHspkUNEZB5eHHbK')
+    (function () {
+      emailjs.init({
+        publicKey: "QHHspkUNEZB5eHHbK",
+      });
+    })();
   </script>
 </head>
 
 <body>
-  <!-- MENU ENCABEZADO -->
+  <!-- HEADER MENU -->
   <div class="contenedor-header">
     <header>
       <div class="logo">
-        <a href="#"><i class='bx bxs-registered'></i>JCD</a>
+        <a href=""><i class='bx bxs-registered'></i>JCD</a>
       </div>
       <nav>
-        <ul id="nav" class="nav-container navbar__list">
+        <ul id="nav" class="nav-container">
           <a href="#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
 
-          <li><a class="navbar__link active" href="#inicio">INICIO</a></li>
-          <li><a class="navbar__link" href="#sobremi">SOBRE MI</a></li>
-          <li><a class="navbar__link" href="#skills">HABILIDADES</a></li>
-          <li><a class="navbar__link" href="#portfolio">PORTAFOLIO</a></li>
-          <li><a class="navbar__link" href="#contacto">CONTACTO</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
       <div class="button-darkMode">
@@ -59,7 +61,7 @@
         </button>
       </div>
       <div class="navbar__toggle--language">
-        <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input check" />
+        <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
         <label for="language-toggle" class="navbar__toggle--language-label">
       </div>
       <a href="#nav" class="nav-responsive">
@@ -68,50 +70,48 @@
     </header>
   </div>
 
-  <!-- SECCION INICIO -->
+  <!-- HOME SECTION -->
   <section id="inicio" class="inicio">
     <div class="contenido-banner">
       <div class="contenedor-img">
-        <img src="assets/img/perfil.jpeg" alt="" />
+        <img src="../img/perfil.jpeg" alt="" />
       </div>
       <h1>JEAN CARLOS DELGADO</h1>
       <h2>
-        Soy desarrollador de software con una pasión innata por la creación de
-        soluciones tecnológicas impactantes.
+        I am a software developer with an innate passion for creating impactful technological solutions.
       </h2>
       <div class="redes">
         <a href="https://www.facebook.com/ken.delgado.3194"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://www.instagram.com/demoniokd_09/"><i class="fa-brands fa-square-instagram"></i></a>
         <a href="https://www.linkedin.com/in/jean-carlos-delgado-3216982b4/"><i
             class="fa-brands fa-linkedin-in"></i></a>
-        <a class="home__social-link" href="https://github.com/JeanCarlosDelg"><i class='bx bxl-github'></i></a>
+        <a href="https://dashboard.rss.com/account/"><i class="fa-solid fa-rss"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- SECCION SOBRE MI -->
+  <!-- ABOUT ME SECTION -->
   <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
-      <h2>Sobre Mí</h2>
+      <h2>About Me</h2>
       <p>
-        <span>¡Saludos!, soy Jean.C Delgado.</span> Explora mi portafolio para
-        descubrir proyectos donde he aplicado mi destreza técnica y creativa.
-        Además, encontrarás detalles sobre mis habilidades clave, experiencias
-        laborales y contribuciones a proyectos destacados.
+        <span>Greetings! I'm Jean.C Delgado.</span> Explore my portfolio to discover projects where I've applied my
+        technical and creative skills. Additionally, you'll find details about my key skills, work experiences, and
+        contributions to notable projects.
       </p>
 
       <div class="fila">
-        <!-- datos personales -->
+        <!-- Personal Information -->
         <div class="col izq">
-          <h3>Datos Personales</h3>
+          <h3>Personal Information</h3>
           <ul>
             <li>
-              <strong>Cumpleaños</strong>
+              <strong>Birthday</strong>
               14-08-1996
             </li>
             <li>
-              <strong>Teléfono</strong>
+              <strong>Phone</strong>
               +593 99 534 6052
             </li>
             <li>
@@ -120,34 +120,34 @@
             </li>
             <li>
               <strong>Website</strong>
-              trabajando en ello...
+              working on it...
             </li>
             <li>
-              <strong>Dirección</strong>
+              <strong>Address</strong>
               Manabí - Ecuador
             </li>
             <li>
-              <strong>Cargo</strong>
+              <strong>Position</strong>
               <span>FREELANCE</span>
             </li>
           </ul>
         </div>
 
-        <!-- intereses -->
+        <!-- Interests -->
         <div class="col der">
-          <h3 class="int">Intereses</h3>
+          <h3 class="int">Interests</h3>
           <div class="contenedor-intereses">
             <div class="interes">
               <i class="fa-solid fa-gamepad"></i>
-              <span>JUEGOS</span>
+              <span>GAMES</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-headphones"></i>
-              <span>MUSICA</span>
+              <span>MUSIC</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-plane"></i>
-              <span>VIAJAR</span>
+              <span>TRIPS</span>
             </div>
             <div class="interes">
               <i class="fa-brands fa-apple"></i>
@@ -155,39 +155,39 @@
             </div>
             <div class="interes">
               <i class="fa-solid fa-person-hiking"></i>
-              <span>DEPORTE</span>
+              <span>SPORTS</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-book"></i>
-              <span>LIBROS</span>
+              <span>BOOKS</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-car"></i>
-              <span>AUTOS</span>
+              <span>CARS</span>
             </div>
             <div class="interes">
               <i class="fa-solid fa-camera"></i>
-              <span>FOTOS</span>
+              <span>PHOTOS</span>
             </div>
           </div>
         </div>
       </div>
       <button>
-        Descargar CV <i class="fa-solid fa-download"></i>
+        Download CV <i class="fa-solid fa-download"></i>
         <span class="overlay"></span>
       </button>
     </div>
   </section>
 
-  <!-- SECCION SKILLS CARDS -->
+  <!-- SKILLS CARDS SECTION -->
   <section id="skills" class="skills section">
-    <h2 class="section__title">Habilidades</h2>
+    <h2 class="section__title">Skills</h2>
 
     <div class="skills__container grid--container">
       <p class="skills__description">
-        Me apasiona aprender y aplicar nuevas tecnologías para mejorar mis habilidades constantemente. Mi experiencia
-        incluye el trabajo con lenguajes como JavaScript, HTML/CSS3 y React, así como la colaboración en equipos para
-        llevar proyectos desde la concepción hasta la implementación.
+        I am passionate about learning and applying new technologies to constantly improve my skills. My experience
+        includes working with languages such as JavaScript, HTML/CSS3, and React, as well as collaborating in teams to
+        take projects from conception to implementation.
       </p>
 
       <div class="skills__wrapper">
@@ -199,11 +199,11 @@
               <i class="bx bxl-html5"></i>
               <div class="skills__description">
                 <h3 class="skills__card-title">HTML</h3>
-                <p>He aplicado habilidades sólidas en la construcción de estructuras HTML limpias y semánticas. Desde la
-                  creación de páginas web responsivas hasta la implementación de elementos interactivos, mi enfoque se
-                  basa en la accesibilidad y la estética. Mi objetivo es seguir expandiendo mis conocimientos en HTML y
-                  tecnologías relacionadas. Estoy emocionado por la oportunidad de colaborar en proyectos que desafíen
-                  mis habilidades y me permitan seguir creciendo como desarrollador web.</p>
+                <p>I have applied solid skills in building clean and semantic HTML structures. From the
+                  creation of responsive web pages to the implementation of interactive elements, my approach is
+                  based on accessibility and aesthetics. My goal is to continue expanding my knowledge in HTML and
+                  related technologies. I am excited for the opportunity to collaborate on projects that challenge
+                  my skills and allow me to continue growing as a web developer.</p>
               </div>
             </div>
           </label>
@@ -214,10 +214,11 @@
               <i class="bx bxl-css3"></i>
               <div class="skills__description">
                 <h3 class="skills__card-title">CSS3</h3>
-                <p>Como apasionado desarrollador con habilidades en CSS3, me especializo en dar vida a la web con estilo
-                  y elegancia. Mi portafolio refleja mi dedicación a crear interfaces atractivas y funcionales mediante
-                  el uso creativo de CSS3. He trabajado en una variedad de proyectos donde he aplicado mis conocimientos
-                  en diseño responsivo, animaciones y estilizado avanzado.</p>
+                <p>As a passionate developer with CSS3 skills, I specialize in bringing the web to life with style.
+                  and elegance. My portfolio reflects my dedication to creating attractive and functional interfaces
+                  through
+                  Creative use of CSS3. I have worked on a variety of projects where I have applied my knowledge
+                  in responsive design, animations and advanced stylization.</p>
               </div>
             </div>
           </label>
@@ -228,11 +229,11 @@
               <i class="bx bxl-javascript"></i>
               <div class="skills__description">
                 <h3 class="skills__card-title">Javascript</h3>
-                <p>Mi enfoque se centra en crear soluciones eficientes y centradas en el usuario, utilizando las
-                  capacidades versátiles de JavaScript. He trabajado en proyectos desafiantes donde la agilidad y la
-                  adaptabilidad son clave, logrando resultados que combinan creatividad y funcionalidad. He contribuido
-                  al desarrollo de aplicaciones web interactivas y dinámicas. Estoy emocionado por la oportunidad de
-                  seguir creciendo y enfrentando nuevos retos en el fascinante mundo de JavaScript.</p>
+                <p>My approach focuses on creating efficient and user-centered solutions, using the
+                  Versatile JavaScript capabilities. I have worked on challenging projects where agility and
+                  Adaptability are key, achieving results that combine creativity and functionality. I have contributed
+                  to the development of interactive and dynamic web applications. I am excited for the opportunity to
+                  continue growing and facing new challenges in the fascinating world of JavaScript.</p>
               </div>
             </div>
           </label>
@@ -243,94 +244,94 @@
               <i class='bx bxl-react'></i>
               <div class="skills__description">
                 <h3 class="skills__card-title">React</h3>
-                <p>Como desarrollador con habilidades intermedias en React, me dedico a construir interfaces de usuario
-                  modernas y eficientes. He participado en el desarrollo de aplicaciones que abarcan desde componentes
-                  reutilizables hasta proyectos complejos de una sola página. Mi enfoque se centra en la creación de
-                  interfaces intuitivas y receptivas, utilizando el poder de React para gestionar el estado de manera
-                  efectiva y optimizar el rendimiento.</p>
+                <p>As a developer with intermediate React skills, I build user interfaces.
+                  modern and efficient. I have participated in the development of applications ranging from components
+                  reusable to complex single page projects. My focus is on creating
+                  intuitive and responsive interfaces, using the power of React to manage state
+                  effective and optimize performance.</p>
               </div>
             </div>
           </label>
         </div>
       </div>
       <div class="skills__tags">
-        <h3 class="skills__tags-title">Habilidades Blandas</h3>
+        <h3 class="skills__tags-title">Soft Skills</h3>
         <div class="skills__tags-container">
-          <span class="skills__tag">Responsable</span>
-          <span class="skills__tag">Comunicativo</span>
-          <span class="skills__tag">Apasionado a su trabajo</span>
-          <span class="skills__tag">Puntual</span>
-          <span class="skills__tag">Proactivo</span>
-          <span class="skills__tag">Autodidacta</span>
-          <span class="skills__tag">Respetuoso</span>
-          <span class="skills__tag">Trabajo en equipo</span>
-          <span class="skills__tag">Creativo</span>
+          <span class="skills__tag">Responsible</span>
+          <span class="skills__tag">Communicative</span>
+          <span class="skills__tag">Passionate about work</span>
+          <span class="skills__tag">Punctual</span>
+          <span class="skills__tag">Proactive</span>
+          <span class="skills__tag">Self-taught</span>
+          <span class="skills__tag">Respectful</span>
+          <span class="skills__tag">Teamwork</span>
+          <span class="skills__tag">Creative</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCION PORTFOLIO -->
+  <!-- PORTFOLIO SECTION -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
-      <h2>PORTAFOLIO</h2>
+      <h2>PORTFOLIO</h2>
       <div class="galeria">
         <div class="proyecto">
-          <img src="assets/img/p1.jpg" alt="" />
+          <img src="../img/p1.jpg" alt="" />
           <div class="overlay">
-            <h3>Diseño Creativo</h3>
-            <p>Fotografía</p>
+            <h3>Creative design</h3>
+            <p>Photography</p>
           </div>
         </div>
         <div class="proyecto">
-          <img src="assets/img/p2.jpg" alt="" />
+          <img src="../img/p2.jpg" alt="" />
           <div class="overlay">
-            <h3>Diseño Creativo</h3>
-            <p>Fotografía</p>
+            <h3>Creative design</h3>
+            <p>Photography</p>
           </div>
         </div>
         <div class="proyecto">
-          <img src="assets/img/p3.jpg" alt="" />
+          <img src="../img/p3.jpg" alt="" />
           <div class="overlay">
-            <h3>Diseño Creativo</h3>
-            <p>Fotografía</p>
+            <h3>Creative design</h3>
+            <p>Photography</p>
           </div>
         </div>
         <div class="proyecto">
-          <img src="assets/img/p4.jpg" alt="" />
+          <img src="../img/p4.jpg" alt="" />
           <div class="overlay">
-            <h3>Diseño Creativo</h3>
-            <p>Fotografía</p>
+            <h3>Creative design</h3>
+            <p>Photography</p>
           </div>
         </div>
         <div class="proyecto">
-          <img src="assets/img/p5.jpg" alt="" />
+          <img src="../img/p5.jpg" alt="" />
           <div class="overlay">
-            <h3>Diseño Creativo</h3>
-            <p>Fotografía</p>
+            <h3>Creative design</h3>
+            <p>Photography</p>
           </div>
         </div>
         <div class="proyecto">
-          <img src="assets/img/p6.jpg" alt="" />
+          <img src="../img/p6.jpg" alt="" />
           <div class="overlay">
-            <h3>Diseño Creativo</h3>
-            <p>Fotografía</p>
+            <h3>Creative design</h3>
+            <p>Photography</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCION CONTACTO -->
+  <!-- CONTACT SECTION -->
   <section id="contacto" class="contacto">
     <div class="contenido-seccion">
-      <h2>CONTACTO</h2>
+      <h2>CONTACT</h2>
       <div class="fila">
         <!-- Formulario -->
         <form id="form" class="form">
           <div class="field">
             <label for="from_name"></label>
-            <input type="text" name="from_name" id="from_name" placeholder="Tú Nombre" class="llenar">
+            <input type="text" name="from_name" id="from_name" placeholder="Your Name" class="llenar">
           </div>
           <div class="field">
             <label for="email_id"></label>
@@ -338,18 +339,14 @@
           </div>
           <div class="field">
             <label for="message"></label>
-            <textarea id="message" name="message" cols="30" rows="10" placeholder="mensaje" class="llenar sms"></textarea>
+            <input type="text" name="message" id="message" placeholder="Message" class="llenar sms">
           </div>
-          <dialog id="modal" class="dialog">
-            Formulario enviado con éxito!
-            <button type="reset" id="btn_close-modal" class="btn_close-modal">Cerrar</button>
-          </dialog>
         
-          <input type="submit" id="button" value="Enviar Mensaje..." class="boton-send">
+          <input type="submit" id="button" value="Send Mesagge" class="boton-send">
         </form>
-        <!-- Mapa -->
+        <!-- Map -->
         <div class="col">
-          <img src="assets/img/map.jpeg" alt="" />
+          <img src="../img/map.jpeg" alt="" />
           <div class="info">
             <ul>
               <li>
@@ -372,7 +369,7 @@
               <li>
                 <i class="bx bxl-whatsapp"></i>
                 <span class="contact__info-number">
-                  <a href="https://wa.me/593995346052?text=Tu%20Mensaje%20De%20Texto" target="_blank">Enviar mensaje a
+                  <a href="https://wa.me/593995346052?text=Tu%20Mensaje%20De%20Texto" target="_blank">Send message to
                     WhatsApp</a>
                 </span>
               </li>
@@ -383,17 +380,17 @@
     </div>
   </section>
 
-  <!-- footer -->
+  <!-- FOOTER -->
   <footer>
     <a href="#inicio" class="arriba">
       <i class="fa-solid fa-angles-up"></i>
     </a>
     <div class="redes">
       <a href="https://www.facebook.com/ken.delgado.3194"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
       <a href="https://www.instagram.com/demoniokd_09/"><i class="fa-brands fa-square-instagram"></i></a>
       <a href="https://www.linkedin.com/in/jean-carlos-delgado-3216982b4/"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a class="home__social-link" href="https://github.com/JeanCarlosDelg"><i class='bx bxl-github'></i></a>
+      <a href="https://dashboard.rss.com/account/"><i class="fa-solid fa-rss"></i></a>
     </div>
     <div class="footer_final">
       <p class="footer__copy a"></p>
